@@ -1,0 +1,213 @@
+
+/* Main Container */
+
+.app-container {
+  min-height: 100vh;
+  padding: 30px 7%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+
+.app-container.light {
+  background-color: #f1f5f9;
+  color: #000000;
+}
+
+/* Dark Theme */
+
+.app-container.dark {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+/* Header */
+
+.theme-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.theme-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.theme-header p {
+  opacity: 0.75;
+}
+
+/* Theme Button */
+
+.theme-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.theme-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Main Content */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 70px 0;
+}
+
+/* Counter Card */
+
+.counter-card {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px 30px;
+  text-align: center;
+  border-radius: 16px;
+  background: white;
+  color: #000000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dark .counter-card {
+  background: #1f2937;
+  color: #f9fafb;
+  border: 1px solid #374151;
+}
+
+.counter-card h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.counter-description {
+  color: #64748b;
+}
+
+.dark .counter-description {
+  color: #cbd5e1;
+}
+
+/* Counter Value */
+
+.counter-value {
+  font-size: 75px;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #2563eb;
+}
+
+/* Counter Buttons */
+
+.counter-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.counter-buttons button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.increment-btn {
+  background: #16a34a;
+}
+
+.increment-btn:hover {
+  background: #15803d;
+}
+
+.decrement-btn {
+  background: #dc2626;
+}
+
+.decrement-btn:hover {
+  background: #b91c1c;
+}
+
+.reset-btn {
+  background: #64748b;
+}
+
+.reset-btn:hover {
+  background: #475569;
+}
+
+/* Theme Status */
+
+.theme-status {
+  margin-top: 30px;
+  padding: 14px 25px;
+  border-radius: 8px;
+  background: #dbeafe;
+  color: #000000;
+}
+
+.dark .theme-status {
+  background: #374151;
+  color: #ffffff;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px 5%;
+  }
+
+  .theme-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .theme-header h1 {
+    font-size: 23px;
+  }
+
+  .main-content {
+    padding: 50px 0;
+  }
+
+  .counter-card {
+    padding: 30px 18px;
+  }
+
+  .counter-value {
+    font-size: 60px;
+  }
+
+  .counter-buttons {
+    flex-direction: column;
+  }
+
+  .counter-buttons button {
+    width: 100%;
+  }
+}
